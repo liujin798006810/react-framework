@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
 class ShowSubOne extends Component{
     render(){
         return(
@@ -8,4 +9,4 @@ class ShowSubOne extends Component{
         )
     }
 }
-export default ShowSubOne;
+export default ShowSubOne

@@ -1,8 +1,9 @@
 
-import generatorRouterParam from './generatorRouteParam.js';
-import distinctObj from './distinctObj.js';
-import checkType from './checkType.js';
-import deepClone from './deepClone.js';
+import generatorRouterParam from './generatorRouteParam'
+import distinctObj from './distinctObj'
+import checkType from './checkType'
+import deepClone from './deepClone'
+
 export {
     generatorRouterParam,
     distinctObj,

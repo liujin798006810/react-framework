@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './index.less';
+import React, { Component } from 'react'
+import './index.less'
+
 class NotAuth extends Component{
     render(){
         return(
@@ -9,4 +10,4 @@ class NotAuth extends Component{
         )
     }
 }
-export default NotAuth;
+export default NotAuth

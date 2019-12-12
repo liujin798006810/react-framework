@@ -8,8 +8,8 @@ const loadComponent = (loader,loading = PageLoading) =>{
     })
 }
 //子路由
-const ShowSubOne = loadComponent( () => import('views/show/one/index.js'))
-const ShowSubTwo= loadComponent( () => import('views/show/two/index.js'))
+const ShowSubOne = loadComponent( () => import('views/show/one'))
+const ShowSubTwo= loadComponent( () => import('views/show/two'))
 
 export default{
     ShowSubOne,

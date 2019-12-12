@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import { Form, Icon, Input, Button } from 'antd';
-import './index.less';
+import React, { Component } from 'react'
+import { Form, Icon, Input, Button } from 'antd'
+import './index.less'
+
 function hasErrors(fieldsError) {
-    return Object.keys(fieldsError).some(field => fieldsError[field]);
+    return Object.keys(fieldsError).some(field => fieldsError[field])
 }
 
 class LoginForm extends Component {
@@ -19,14 +20,15 @@ class LoginForm extends Component {
         window.localStorage.setItem('userInfo', JSON.stringify(_userInfo))
         window.localStorage.setItem('token', 'thisistoken')
         this.props.history.push('/show')
-    };
+    }
 
     render() {
-        const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form;
+        const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form
 
         // Only show error after a field is touched.
-        const usernameError = isFieldTouched('username') && getFieldError('username');
-        const passwordError = isFieldTouched('password') && getFieldError('password');
+        const usernameError = isFieldTouched('username') && getFieldError('username')
+        const passwordError = isFieldTouched('password') && getFieldError('password')
+
         return (
             <Form layout="inline" className="loginPage" onSubmit={this.handleSubmit}>
                 <Form.Item validateStatus={usernameError ? 'error' : ''} help={usernameError || ''}>
@@ -56,9 +58,10 @@ class LoginForm extends Component {
                     </Button>
                 </Form.Item>
             </Form>
-        );
+        )
     }
 }
 
-const Login = Form.create({ name: 'horizontal_login' })(LoginForm);
-export default Login;
+const Login = Form.create({ name: 'horizontal_login' })(LoginForm)
+
+export default Login

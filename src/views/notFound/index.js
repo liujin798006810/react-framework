@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import './index.less';
+import React, { Component } from 'react'
+import './index.less'
+
 class NotFound extends Component {
     render() {
         return (
@@ -10,4 +11,4 @@ class NotFound extends Component {
         )
     }
 }
-export default NotFound;
+export default NotFound
